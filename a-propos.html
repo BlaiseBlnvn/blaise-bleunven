@@ -11,9 +11,22 @@
     .about-page { max-width: 1120px; margin: 0 auto; padding: 64px 28px 90px; }
     .about-hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(32px, 7vw, 88px); align-items: center; margin: 30px 0 100px; }
     .about-kicker, .section-kicker { font-size: .75rem; letter-spacing: .13em; text-transform: uppercase; color: #777; }
-    .about-hero h1 { max-width: 650px; margin: 18px 0 24px; font-size: clamp(2.5rem, 5vw, 4.6rem); line-height: 1.04; font-weight: 500; letter-spacing: -.045em; }
-    .about-intro { max-width: 620px; font-size: 1.08rem; line-height: 1.8; color: #555; }
-    .about-portrait { margin: 0; }
+    .about-hero h1 {
+    max-width: 520px;
+    margin: 12px 0 18px;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -.035em;
+}
+
+.about-intro {
+    max-width: 540px;
+    font-size: 0.94rem;
+    line-height: 1.65;
+    color: #555;
+}
+ .about-portrait { margin: 0; }
     .about-portrait img { 
     display: block;
     width: 100%;
@@ -177,8 +190,17 @@
     <div class="about-bottom">BLAISE BLEUNVEN · Ingénierie mécanique & développement technique</div>
   </main>
 
-  <footer class="site-footer">
-    <a href="mailto:blaise.bleunven@gmail.com">blaise.bleunven@gmail.com</a>
-  </footer>
+   <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <div>
+                <div class="footer-brand">BLAISE BLEUNVEN</div>
+                <div>Ingénierie mécanique & développement technique</div>
+            </div>
+            <div class="footer-links"><a href="mailto:blaise.bleunven@gmail.com">blaise.bleunven@gmail.com</a><a
+                    href="competences.html">Compétences</a><a href="realisations.html">Réalisations</a></div>
+            <div>© <span data-year></span> Blaise Bleunven</div>
+        </div>
+    </footer>
+    <script src="site.js"></script>
 </body>
 </html>
