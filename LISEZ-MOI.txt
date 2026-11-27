@@ -1,0 +1,16 @@
+PAGE « À PROPOS » — BLAISE BLEUNVEN
+
+Contenu du pack :
+- a-propos.html : nouvelle page à placer à la racine du site, au même niveau que index.html.
+- assets/images/portrait-blaise.jpg : portrait fourni par Blaise.
+- assets/images/interet-*.jpg : illustrations provisoires générées pour la maquette, à remplacer par des photos personnelles.
+
+INSTALLATION
+1. Décompresser ce ZIP.
+2. Copier a-propos.html à la racine du dossier du site.
+3. Copier le dossier assets/images dans le dossier assets/images existant en fusionnant les dossiers. Ne pas supprimer les images déjà présentes.
+4. Vérifier que styles.css est bien présent à la racine : la page le charge avec <link rel="stylesheet" href="styles.css">.
+5. Ajouter le lien <a href="a-propos.html">À propos</a> dans la navigation des autres pages si souhaité.
+6. Enregistrer, commit puis synchroniser avec GitHub.
+
+Les quatre images de centres d’intérêt sont provisoires et doivent être remplacées si tu souhaites uniquement utiliser des photos personnelles sur le site.

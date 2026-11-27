@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez le parcours, l'expérience et les centres d'intérêt de Blaise Bleunven, ingénieur mécatronique indépendant.">
+  <title>À propos de moi — Blaise Bleunven</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Styles propres à la page À propos */
+    .about-page { max-width: 1120px; margin: 0 auto; padding: 64px 28px 90px; }
+    .about-hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(32px, 7vw, 88px); align-items: center; margin: 30px 0 100px; }
+    .about-kicker, .section-kicker { font-size: .75rem; letter-spacing: .13em; text-transform: uppercase; color: #777; }
+    .about-hero h1 { max-width: 650px; margin: 18px 0 24px; font-size: clamp(2.5rem, 5vw, 4.6rem); line-height: 1.04; font-weight: 500; letter-spacing: -.045em; }
+    .about-intro { max-width: 620px; font-size: 1.08rem; line-height: 1.8; color: #555; }
+    .about-portrait { margin: 0; }
+    .about-portrait img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 35%; }
+    .about-portrait figcaption { margin-top: 9px; color: #888; font-size: .75rem; }
+    .about-section { margin: 0 0 100px; }
+    .about-section-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 28px; }
+    .about-section h2 { margin: 8px 0 0; font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1.15; font-weight: 500; letter-spacing: -.035em; }
+    .career-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .career-card { min-height: 235px; padding: 28px; border: 1px solid #dedede; display: flex; flex-direction: column; justify-content: space-between; }
+    .career-date { color: #777; font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; }
+    .career-card h3 { margin: 22px 0 6px; font-size: 1.3rem; font-weight: 550; }
+    .career-role { margin: 0 0 14px; color: #555; font-size: .92rem; }
+    .career-description { margin: 0; color: #666; font-size: .9rem; line-height: 1.7; }
+    .education-block { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 26px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+    .education-block h3 { margin: 6px 0 4px; font-size: 1.15rem; font-weight: 550; }
+    .education-block p { margin: 0; color: #666; font-size: .9rem; }
+    .education-year { color: #777; white-space: nowrap; font-size: .85rem; }
+    .interest-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+    .interest-card { min-width: 0; }
+    .interest-image { width: 100%; aspect-ratio: 4 / 3; background: #efefec; overflow: hidden; }
+    .interest-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .interest-card h3 { margin: 15px 0 6px; font-size: 1.05rem; font-weight: 550; }
+    .interest-card p { margin: 0; color: #666; font-size: .86rem; line-height: 1.65; }
+    .about-bottom { padding-top: 24px; border-top: 1px solid #ddd; color: #777; font-size: .8rem; }
+    @media (max-width: 760px) {
+      .about-page { padding: 38px 20px 64px; }
+      .about-hero { grid-template-columns: 1fr; gap: 28px; margin: 24px 0 70px; }
+      .about-portrait { max-width: 430px; }
+      .about-section { margin-bottom: 72px; }
+      .career-grid { grid-template-columns: 1fr; }
+      .interest-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 14px; }
+      .about-section-heading { display: block; }
+    }
+    @media (max-width: 420px) { .education-block { align-items: flex-start; flex-direction: column; gap: 8px; } }
+  </style>
+</head>
+<body>
+  <!-- Reprends ici la navigation exacte des autres pages si elle diffère. -->
+  <header class="site-header">
+    <a class="logo" href="index.html">BLAISE BLEUNVEN</a>
+    <nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="moyens-techniques.html">Moyens techniques</a>
+      <a href="a-propos.html" aria-current="page">À propos</a>
+    </nav>
+  </header>
+
+  <main class="about-page">
+    <section class="about-hero">
+      <div>
+        <span class="about-kicker">À propos de moi</span>
+        <h1>Ingénieur, concepteur et passionné de création technique.</h1>
+        <p class="about-intro">Depuis plus de quinze ans, je travaille au développement de systèmes mécatroniques, principalement dans le domaine de la robotique. Mon parcours m'a amené à intervenir sur des produits complexes, de la recherche et du prototypage jusqu'à la conception et à la validation de solutions techniques.</p>
+        <p class="about-intro">En parallèle de mon activité professionnelle, je garde le goût de l'expérimentation et de la fabrication : comprendre un mécanisme, concevoir une pièce, réparer ou donner forme à une nouvelle idée.</p>
+      </div>
+      <figure class="about-portrait">
+        <img src="assets/images/portrait-blaise.jpg" alt="Portrait de Blaise Bleunven">
+        <figcaption>Blaise Bleunven</figcaption>
+      </figure>
+    </section>
+
+    <section class="about-section" aria-labelledby="career-title">
+      <div class="about-section-heading">
+        <div>
+          <span class="section-kicker">Expérience professionnelle</span>
+          <h2 id="career-title">Mon parcours</h2>
+        </div>
+        <p class="career-description">Des expériences complémentaires autour de la mécatronique et de la robotique.</p>
+      </div>
+      <div class="career-grid">
+        <article class="career-card">
+          <div>
+            <span class="career-date">Novembre 2018 — Septembre 2025</span>
+            <h3>Ganymed Robotics</h3>
+            <p class="career-role">Ingénieur Hardware Principal — Responsable Hardware</p>
+            <p class="career-description">Développement d'une plateforme de robotique chirurgicale : architecture matérielle, conception mécanique et mécatronique, prototypage, essais et coordination technique.</p>
+          </div>
+        </article>
+        <article class="career-card">
+          <div>
+            <span class="career-date">Février 2012 — Novembre 2018</span>
+            <h3>Aldebaran / SoftBank Robotics</h3>
+            <p class="career-role">Ingénieur mécatronique</p>
+            <p class="career-description">Conception et développement de briques innovantes pour la robotique humanoïde, intégration de sous-systèmes mécaniques, électroniques et logiciels, prototypage et validation.</p>
+          </div>
+        </article>
+        <article class="career-card">
+          <div>
+            <span class="career-date">Novembre 2010 — Février 2012</span>
+            <h3>CEA-LIST</h3>
+            <p class="career-role">Ingénieur chercheur en mécatronique</p>
+            <p class="career-description">Recherche autour de la mobilité omnidirectionnelle pour un arceau chirurgical : étude, développement et évaluation d'une solution mécatronique.</p>
+          </div>
+        </article>
+        <article class="career-card">
+          <div>
+            <span class="career-date">Janvier 2010 — Août 2010</span>
+            <h3>Haption</h3>
+            <p class="career-role">Stage ingénieur mécatronique</p>
+            <p class="career-description">Conception et intégration d'une interface haptique.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" aria-labelledby="education-title">
+      <div class="about-section-heading">
+        <div>
+          <span class="section-kicker">Formation</span>
+          <h2 id="education-title">Les bases de mon parcours</h2>
+        </div>
+      </div>
+      <div class="education-block">
+        <div>
+          <span class="section-kicker">École nationale d'ingénieurs de Brest</span>
+          <h3>Diplôme d'ingénieur en mécatronique — ENIB</h3>
+          <p>Brest, France</p>
+        </div>
+        <span class="education-year">2004 — 2010</span>
+      </div>
+    </section>
+
+    <section class="about-section" aria-labelledby="interests-title">
+      <div class="about-section-heading">
+        <div>
+          <span class="section-kicker">En dehors des projets</span>
+          <h2 id="interests-title">Centres d'intérêt</h2>
+        </div>
+        <p class="career-description">Des activités qui nourrissent ma curiosité et mon envie de créer.</p>
+      </div>
+      <div class="interest-grid">
+        <article class="interest-card">
+          <div class="interest-image"><img src="assets/images/interet-musique.jpg" alt="Musique et instruments" loading="lazy"></div>
+          <h3>Musique</h3>
+          <p>Guitare, basse, composition assistée par ordinateur et pratique en groupe.</p>
+        </article>
+        <article class="interest-card">
+          <div class="interest-image"><img src="assets/images/interet-maker.jpg" alt="Impression 3D et projets maker" loading="lazy"></div>
+          <h3>DIY & Maker</h3>
+          <p>Impression 3D, conception de véhicules électriques personnalisés et fabrication d'instruments.</p>
+        </article>
+        <article class="interest-card">
+          <div class="interest-image"><img src="assets/images/interet-restauration.jpg" alt="Restauration et travail du bois" loading="lazy"></div>
+          <h3>Design & restauration</h3>
+          <p>Aménagement intérieur, optimisation d'espaces de travail et restauration de meubles anciens.</p>
+        </article>
+        <article class="interest-card">
+          <div class="interest-image"><img src="assets/images/interet-mecanique.jpg" alt="Mécanique et restauration de motos" loading="lazy"></div>
+          <h3>Mécanique</h3>
+          <p>Restauration et entretien de motos anciennes.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="about-bottom">BLAISE BLEUNVEN · Ingénierie mécanique & développement technique</div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="mailto:blaise.bleunven@gmail.com">blaise.bleunven@gmail.com</a>
+  </footer>
+</body>
+</html>
