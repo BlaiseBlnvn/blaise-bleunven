@@ -14,7 +14,13 @@
     .about-hero h1 { max-width: 650px; margin: 18px 0 24px; font-size: clamp(2.5rem, 5vw, 4.6rem); line-height: 1.04; font-weight: 500; letter-spacing: -.045em; }
     .about-intro { max-width: 620px; font-size: 1.08rem; line-height: 1.8; color: #555; }
     .about-portrait { margin: 0; }
-    .about-portrait img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 35%; }
+    .about-portrait img { 
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 6px; }
     .about-portrait figcaption { margin-top: 9px; color: #888; font-size: .75rem; }
     .about-section { margin: 0 0 100px; }
     .about-section-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 28px; }
@@ -50,16 +56,16 @@
 </head>
 <body>
   <!-- Reprends ici la navigation exacte des autres pages si elle diffère. -->
-  <header class="site-header">
-    <a class="logo" href="index.html">BLAISE BLEUNVEN</a>
-    <nav aria-label="Navigation principale">
-      <a href="index.html">Accueil</a>
-      <a href="competences.html">Compétences</a>
-      <a href="realisations.html">Réalisations</a>
-      <a href="moyens-techniques.html">Moyens techniques</a>
-      <a href="a-propos.html" aria-current="page">À propos</a>
-    </nav>
-  </header>
+   <header class="site-header">
+        <div class="wrap nav"><a class="brand" href="index.html">BLAISE BLEUNVEN<small>INGÉNIERIE & DÉVELOPPEMENT
+                    TECHNIQUE</small></a><button class="menu-toggle" aria-label="Ouvrir le menu"
+                aria-expanded="false">Menu</button>
+            <nav class="nav-links"><a href="index.html">Accueil</a><a href="competences.html">Compétences</a><a
+                    href="realisations.html">Réalisations</a><a href="moyens-techniques.html">Moyens techniques</a><a
+                    href="a-propos.html">À propos de moi</a></nav><a class="nav-cta"
+                href="mailto:blaise.bleunven@gmail.com">Me contacter ↗</a>
+        </div>
+    </header>
 
   <main class="about-page">
     <section class="about-hero">
